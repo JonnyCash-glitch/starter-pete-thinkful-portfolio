@@ -1,0 +1,121 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+/* Body and Typography Styles */
+body {
+  background-color: #eae2b7;
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Times, serif;
+}
+/* Centering titles for specific sections */
+#about h2,
+.background-section h2,
+#portfolio h3,
+#contact h2 {
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.image-circle {
+    border-radius: 50%; /* This creates the circular shape */
+    width: 200px; /* Example width, should be the same as height for a perfect circle */
+    height: 200px; /* Example height, should be the same as width */
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+  }
+  
+nav a {
+  text-decoration: none;
+  color: #003049;
+  padding: 0 10px;
+}
+
+nav a:hover {
+  color: #f77f00;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* About Section Styles */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-info {
+  flex: 2;
+}
+
+.background-section {
+  padding-top: 20px;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if not enough space */
+    justify-content: space-between; /* Distributes space between items */
+    text-align: center;
+    gap: 20px; /* Adds space between items if they wrap */
+  }
+  
+  #portfolio section {
+    flex: 1; /* Each section will grow to take up equal space */
+    max-width: calc(33.333% - 20px); /* 3 items per row, minus the gap */
+    margin-bottom: 10px;
+  }
+  
+  #portfolio img {
+    width: 100%; /* Makes the image responsive within its container */
+    height: auto; /* Keeps the image aspect ratio */
+  }
+  
+  #portfolio p {
+    font-size: 14px;
+  }
+  
+/* Contact Section Styles */
+#contact a {
+  color: #003049;
+}
+
+#contact a:hover {
+  color: #f77f00;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  #about, #portfolio {
+    flex-direction: column;
+  }
+}
