@@ -21,27 +21,59 @@ h1, h2, h3 {
 }
 
 /* Header Styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
+.header-container {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
-.image-circle {
-    border-radius: 50%; /* This creates the circular shape */
-    width: 200px; /* Example width, should be the same as height for a perfect circle */
-    height: 200px; /* Example height, should be the same as width */
-    object-fit: cover; /* This ensures the image covers the area without distortion */
-  }
-  
+
+.header-content {
+  display: flex;
+  justify-content: center; /* Center-align content horizontally */
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-family: "Playfair Display", Times, serif;
+  margin: 0;
+  color: #000; /* Black text color */
+}
+
+nav {
+  display: flex;
+  margin-top: 10px; /* Adjust spacing */
+}
+
 nav a {
   text-decoration: none;
-  color: #003049;
-  padding: 0 10px;
+  color: #ff0000; /* Red text color */
+  text-align: center; /* Center-align the text */
+  text-transform: uppercase; /* Convert text to uppercase */
+  padding: 5px 15px; /* Add padding for spacing */
+  border: 1px solid transparent; /* Remove the underline */
+  border-radius: 5px; /* Add some rounding to buttons */
+  margin-right: 10px; /* Add spacing between links */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
 }
 
 nav a:hover {
-  color: #f77f00;
+  background-color: #ff0000; /* Red background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Make the image rounded */
+.image-circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.about-heading h2 {
+  color: #000; /* Black text color */
 }
 
 /* Main Content Styles */
